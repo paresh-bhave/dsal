@@ -4,14 +4,14 @@ import Queue from "./Queue";
 function main() {
   const queue = new Queue<number>();
 
-  queue.add(10);
-  queue.add(20);
-  queue.add(30);
-  queue.add(40);
-  queue.add(50);
+  queue.enqueue(10);
+  queue.enqueue(20);
+  queue.enqueue(30);
+  queue.enqueue(40);
+  queue.enqueue(50);
   queue.display();
 
-  console.log(queue.remove());
+  console.log(queue.dequeue());
   queue.display();
 
   console.log(queue.front());

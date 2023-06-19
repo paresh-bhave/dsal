@@ -9,11 +9,11 @@ class Queue<T> {
     this.elements = [];
   }
 
-  public add(element: T): void {
+  public enqueue(element: T): void {
     this.elements.push(element);
   }
 
-  public remove(): T | undefined {
+  public dequeue(): T | undefined {
     if(this.isEmpty()) {
       console.log("[ERR] queue is underflow");
       return;
